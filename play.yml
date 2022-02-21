@@ -1,0 +1,10 @@
+---
+- hosts: group01
+  gather_facts: false
+  tasks:
+    - name: print group var
+      debug:
+        msg: '{{ group_message }}'
+    - name: print host var
+      debug:
+        msg: '{{ message }}'
